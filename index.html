@@ -108,6 +108,16 @@
   .vid figcaption b{display:block;color:#fff;font-size:15px;font-weight:600}
   .vid figcaption small{color:var(--amber-l);font-size:12.5px}
 
+  /* La Ferve (ao vivo) */
+  #laferve{background:linear-gradient(180deg,var(--ink) 0%, #1d140d 100%);color:var(--cream)}
+  #laferve h2{color:#fff}
+  #laferve h2 .accent{color:var(--amber)}
+  #laferve .lead{color:#c9b7a1}
+  .vwrap.wide{aspect-ratio:16/9}
+  .live-wide{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}
+  .live-tall{display:flex;justify-content:center;margin-top:18px}
+  .live-tall .vid{width:100%;max-width:300px}
+
   /* highlights */
   .hls{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px;margin-top:12px}
   .hl{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 17px;
@@ -159,6 +169,7 @@
     .formacao-grid{grid-template-columns:1fr}
     .info{grid-template-columns:1fr}
     .blocks{grid-template-columns:1fr}
+    .live-wide{grid-template-columns:1fr}
     ol.set .art{display:none}
   }
   @media(max-width:440px){ .vids{grid-template-columns:1fr} }
@@ -173,7 +184,7 @@
     <div class="tags">CL&Aacute;SSICOS DO ROCK &middot; POP &middot; SOUL &nbsp;|&nbsp; ANOS 60 &middot; 70 &middot; 80</div>
     <div class="cta">
       <a class="btn primary" href="#contato">Contratar show</a>
-      <a class="btn ghost" href="#ensaios">&#9654; Ver ensaios</a>
+      <a class="btn ghost" href="#laferve">&#9654; Ver ao vivo</a>
       <a class="btn ghost" href="#repertorio">Repert&oacute;rio</a>
     </div>
   </div>
@@ -250,6 +261,45 @@
         </div>
         <figcaption><b>Stand by Me</b><small>Ben E. King &middot; trecho de ensaio</small></figcaption>
       </figure>
+    </div>
+  </div>
+</section>
+
+<section id="laferve">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--amber)">Ao vivo</span>
+    <h2>No palco do <span class="accent">La Ferve Bar</span></h2>
+    <p class="lead">Uma noite de show da banda em S&atilde;o Jos&eacute; dos Campos.</p>
+    <div class="live-wide">
+        <figure class="vid">
+          <div class="vwrap wide">
+            <video preload="none" playsinline poster="videos/laferve-mix1.jpg" src="videos/laferve-mix1.mp4"></video>
+            <button class="playbtn" type="button" aria-label="Reproduzir Ao vivo no La Ferve Bar">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <figcaption><b>Ao vivo no La Ferve Bar</b><small>La Ferve Bar &middot; S&atilde;o Jos&eacute; dos Campos</small></figcaption>
+        </figure>
+        <figure class="vid">
+          <div class="vwrap wide">
+            <video preload="none" playsinline poster="videos/laferve-shockingblue.jpg" src="videos/laferve-shockingblue.mp4"></video>
+            <button class="playbtn" type="button" aria-label="Reproduzir Venus (Shocking Blue)">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <figcaption><b>Venus (Shocking Blue)</b><small>La Ferve Bar &middot; S&atilde;o Jos&eacute; dos Campos</small></figcaption>
+        </figure>
+    </div>
+    <div class="live-tall">
+        <figure class="vid">
+          <div class="vwrap">
+            <video preload="none" playsinline poster="videos/laferve-mix2.jpg" src="videos/laferve-mix2.mp4"></video>
+            <button class="playbtn" type="button" aria-label="Reproduzir Ao vivo no La Ferve Bar">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <figcaption><b>Ao vivo no La Ferve Bar</b><small>La Ferve Bar &middot; S&atilde;o Jos&eacute; dos Campos</small></figcaption>
+        </figure>
     </div>
   </div>
 </section>
